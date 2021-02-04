@@ -17,21 +17,23 @@ class Main {
    System.out.println("Whats your age ?");
    int age = scan.nextInt(); 
 
-   System.out.println(sportQualifications(name,height));
-
-
+  if(sportQualifications(name,height))
+  {
    int jersey = jerseyNumber(favNum, age);
    System.out.println("Your jersey number is " + jersey);
+  }
 
   }
   // create 2 methods at least one parameter and it must return a value
 
-  static String sportQualifications(String name, double height)
+  static boolean sportQualifications(String name, double height)
   {
     if( height <= 5.7 ){
      System.out.println("Sorry, You are not tall enough");
+     return false;
     }else{
     System.out.println("Welcome to the team " + name + "!");
+    return true;
     }
   }
 
