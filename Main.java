@@ -8,7 +8,7 @@ class Main {
   
    System.out.println("Whats your name ?");
    String name = scan.next();
-   
+    
    System.out.println("How tall are you ?");
    double height = scan.nextDouble();
 
