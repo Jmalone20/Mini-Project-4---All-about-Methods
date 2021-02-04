@@ -8,9 +8,9 @@ class Main {
 
    System.out.println("Whats your name ?");
    String name = scan.next();
-
-   System.out.println("How tall are you ? ");
-   double height = scan.next(); 
+   
+   System.out.println("How tall are you ?");
+   double height = scan.nextDouble();
 
    System.out.println("Whats your favourite number ?");
    int favNum = scan.nextInt();
@@ -28,7 +28,7 @@ class Main {
 
   static String sportQualifications(String name, double height)
   {
-    if( height < 5.7 ){
+    if( height <= 5.7 ){
      System.out.println("Sorry, You are not tall enough");
     }else{
     System.out.println("Welcome to the team " + name + "!");
