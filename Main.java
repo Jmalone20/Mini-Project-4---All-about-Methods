@@ -22,9 +22,9 @@ class Main {
   {
    int jersey = jerseyNumber(favNum, age);
    System.out.println("Your jersey number is " + jersey);
+   }
   }
-
-  }
+  
   // create 2 methods at least one parameter and it must return a value
   // Will question if you qualifiy through an if/else statement 
   static boolean sportQualifications(String name, double height)
