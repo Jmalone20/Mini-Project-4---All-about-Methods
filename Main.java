@@ -5,7 +5,7 @@ class Main {
    Scanner scan = new Scanner(System.in);
 
    System.out.println("I'm here to try out for the volleyball team");
-
+  
    System.out.println("Whats your name ?");
    String name = scan.next();
    
@@ -17,6 +17,7 @@ class Main {
    System.out.println("Whats your age ?");
    int age = scan.nextInt(); 
 
+  // If you qualifiy it will return/give a jersey number and welcome you to the team 
   if(sportQualifications(name,height))
   {
    int jersey = jerseyNumber(favNum, age);
@@ -25,7 +26,7 @@ class Main {
 
   }
   // create 2 methods at least one parameter and it must return a value
-
+  // Will question if you qualifiy through an if/else statement 
   static boolean sportQualifications(String name, double height)
   {
     if( height <= 5.7 ){
