@@ -10,7 +10,7 @@ class Main {
    String name = scan.next();
 
    System.out.println("How tall are you ? ");
-   double height = scan.next();
+   double height = scan.next(); 
 
    System.out.println("Whats your favourite number ?");
    int favNum = scan.nextInt();
