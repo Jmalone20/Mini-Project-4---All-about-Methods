@@ -9,12 +9,15 @@ class Main {
    System.out.println("Whats your name ?");
    String name = scan.next();
 
+   System.out.println("How tall are you ? ");
+   double height = scan.next();
+
    System.out.println("Whats your favourite number ?");
    int favNum = scan.nextInt();
    System.out.println("Whats your age ?");
    int age = scan.nextInt(); 
 
-   System.out.println(sportQualifications(name));
+   System.out.println(sportQualifications(name,height));
 
 
    int jersey = jerseyNumber(favNum, age);
@@ -23,7 +26,7 @@ class Main {
   }
   // create 2 methods at least one parameter and it must return a value
 
-  static String sportQualifications(String name)
+  static String sportQualifications(String name, double height)
   {
     if( height < 5.7 ){
      System.out.println("Sorry, You are not tall enough");
